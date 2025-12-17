@@ -1,0 +1,268 @@
+
+🔄 MEMUAT DATA...
+
+✅ Data berhasil dimuat dari 'D:/VSCODE/myenv2/share/Mining_Final_Project/finale.csv'
+   Jumlah baris: 21,348
+   Jumlah kolom: 16
+================================================================================
+
+📊 EXPLORATORY DATA ANALYSIS (EDA)
+
+1. INFORMASI DATASET:
+   Shape: (21348, 16)
+   Kolom: ['Case ID', 'Activity', 'Resource', 'Complete Timestamp', 'Variant', 'Variant index', 'Variant.1', 'seriousness', 'customer', 'product', 'responsible_section', 'seriousness_2', 'service_level', 'service_type', 'support_section', 'workgroup']
+
+   Tipe Data:
+   - Case ID: object
+   - Activity: object
+   - Resource: object
+   - Complete Timestamp: object
+   - Variant: object
+   - Variant index: int64
+   - Variant.1: object
+   - seriousness: object
+   - customer: object
+   - product: object
+   - responsible_section: object
+   - seriousness_2: object
+   - service_level: object
+   - service_type: object
+   - support_section: object
+   - workgroup: object
+
+2. STATISTIK DESKRIPTIF:
+          Case ID               Activity Resource       Complete Timestamp    Variant  Variant index  Variant.1 seriousness  customer  product responsible_section seriousness_2 service_level service_type support_section workgroup
+count       21348                  21348    21348                    21348      21348   21348.000000      21348       21348     21348    21348               21348         21348         21348        21348           21348     21348
+unique       4580                     14       22                    21157        226            NaN        226           1       397       21                   7             4             4            4               7         4
+top     Case 1820  Take in charge ticket  Value 2  2011/04/02 14:15:17.000  Variant 1            NaN  Variant 1     Value 1  Value 22  Value 1             Value 1       Value 1       Value 2      Value 1         Value 1   Value 1
+freq           15                   5060     4235                        7       9464            NaN       9464       21348      1233     7932               20410         12125         16436        18087           20497     18092
+mean          NaN                    NaN      NaN                      NaN        NaN      14.638093        NaN         NaN       NaN      NaN                 NaN           NaN           NaN          NaN             NaN       NaN
+std           NaN                    NaN      NaN                      NaN        NaN      36.126709        NaN         NaN       NaN      NaN                 NaN           NaN           NaN          NaN             NaN       NaN
+min           NaN                    NaN      NaN                      NaN        NaN       1.000000        NaN         NaN       NaN      NaN                 NaN           NaN           NaN          NaN             NaN       NaN
+25%           NaN                    NaN      NaN                      NaN        NaN       1.000000        NaN         NaN       NaN      NaN                 NaN           NaN           NaN          NaN             NaN       NaN
+50%           NaN                    NaN      NaN                      NaN        NaN       2.000000        NaN         NaN       NaN      NaN                 NaN           NaN           NaN          NaN             NaN       NaN
+75%           NaN                    NaN      NaN                      NaN        NaN       7.000000        NaN         NaN       NaN      NaN                 NaN           NaN           NaN          NaN             NaN       NaN
+max           NaN                    NaN      NaN                      NaN        NaN     226.000000        NaN         NaN       NaN      NaN                 NaN           NaN           NaN          NaN             NaN       NaN
+
+4. CEK MISSING VALUES:
+   ✅ Tidak ada missing values
+
+5. CEK DUPLIKASI DATA:
+   Total baris duplikat: 127 (0.59%)
+   ⚠️  Ditemukan data duplikat yang perlu dibersihkan
+
+3. SAMPLE DATA (5 baris pertama):
+  Case ID               Activity Resource       Complete Timestamp     Variant  Variant index   Variant.1 seriousness customer  product responsible_section seriousness_2 service_level service_type support_section workgroup
+0  Case 1     Assign seriousness  Value 1  2012/10/09 14:50:17.000  Variant 12             12  Variant 12     Value 1  Value 1  Value 1             Value 1       Value 1       Value 1      Value 1         Value 1   Value 1
+1  Case 1  Take in charge ticket  Value 1  2012/10/09 14:51:01.000  Variant 12             12  Variant 12     Value 1  Value 1  Value 1             Value 1       Value 1       Value 1      Value 1         Value 1   Value 1
+2  Case 1  Take in charge ticket  Value 2  2012/10/12 15:02:56.000  Variant 12             12  Variant 12     Value 1  Value 1  Value 1             Value 1       Value 1       Value 2      Value 1         Value 1   Value 1
+3  Case 1         Resolve ticket  Value 1  2012/10/25 11:54:26.000  Variant 12             12  Variant 12     Value 1  Value 1  Value 1             Value 1       Value 1       Value 2      Value 1         Value 1   Value 1
+4  Case 1                 Closed  Value 3  2012/11/09 12:54:39.000  Variant 12             12  Variant 12     Value 1  Value 1  Value 1             Value 1       Value 1       Value 2      Value 1         Value 1   Value 1
+================================================================================
+
+🧹 HANDLING MISSING VALUES
+
+✅ Tidak ada missing values yang perlu di-handle
+================================================================================
+
+🧹 MENGHAPUS DUPLIKASI DATA
+
+   Baris duplikat dihapus: 127
+   Baris tersisa: 21,221
+================================================================================
+
+✅ VALIDASI FORMAT DATA
+
+   Kolom teridentifikasi:
+   - Case ID: Case ID
+   - Activity: Activity
+   - Timestamp: ❌ Tidak ditemukan
+
+   ⚠️  PERINGATAN: Beberapa kolom penting tidak ditemukan!
+   Pastikan dataset memiliki kolom: Case ID, Activity, Timestamp
+================================================================================
+
+⏰ PREPROCESSING TIMESTAMP
+
+   ⚠️  Kolom timestamp tidak ditemukan, skip timestamp processing
+================================================================================
+
+🔍 PROCESSING CASE ID & ACTIVITY
+
+   1. Validasi Case IDs...
+      Total unique cases: 4,580
+      Total events: 21,221
+      Rata-rata events per case: 4.63
+
+   2. Standardisasi Activity Names...
+      Original unique activities: 14
+      Standardized unique activities: 14
+      ✅ Activities berhasil distandarisasi
+
+   3. Menghitung frekuensi activities...
+      Top 10 Activities:
+      1. take in charge ticket: 5,058 (23.83%)
+      2. assign seriousness: 4,929 (23.23%)
+      3. resolve ticket: 4,895 (23.07%)
+      4. closed: 4,561 (21.49%)
+      5. wait: 1,450 (6.83%)
+      6. insert ticket: 118 (0.56%)
+      7. require upgrade: 118 (0.56%)
+      8. create sw anomaly: 66 (0.31%)
+      9. resolve sw anomaly: 13 (0.06%)
+      10. schedule intervention: 5 (0.02%)
+      📊 Visualisasi disimpan: 'activity_frequencies.png'
+
+   4. Mengidentifikasi Case Variants...
+      Total unique variants: 211
+
+      Top 5 Most Common Variants:
+      1. [2418 cases, 52.79%] assign seriousness -> take in charge ticket -> resolve ticket -> closed...
+      2. [557 cases, 12.16%] assign seriousness -> take in charge ticket -> wait -> resolve ticket -> closed...
+      3. [235 cases, 5.13%] assign seriousness -> take in charge ticket -> wait -> take in charge ticket -> resolve ticket -> cl...
+      4. [220 cases, 4.80%] assign seriousness -> assign seriousness -> take in charge ticket -> resolve ticket -> closed...
+      5. [192 cases, 4.19%] assign seriousness -> resolve ticket -> closed...
+================================================================================
+
+⚙️  FEATURE ENGINEERING
+
+   ⚠️  Kolom penting tidak lengkap, skip feature engineering
+================================================================================
+
+🔎 OUTLIER DETECTION
+
+   1. Deteksi Duration Outliers (IQR Method)...
+      ⚠️  Case duration belum dihitung, skip
+
+   2. Deteksi Activity Count Outliers (IQR Method)...
+      Q1 (25th percentile): 4 activities
+      Q3 (75th percentile): 5 activities
+      IQR: 1
+      Lower Bound: 2 activities
+      Upper Bound: 6 activities
+      ✅ 310 cases terdeteksi sebagai activity count outliers (6.77%)
+
+      Top 5 Cases dengan Activity Terbanyak:
+      1. Case Case 1820: 15 activities
+      2. Case Case 1499: 14 activities
+      3. Case Case 2368: 14 activities
+      4. Case Case 1245: 13 activities
+      5. Case Case 3835: 13 activities
+
+   3. Membuat visualisasi outliers...
+      📊 Visualisasi outliers disimpan: 'outliers_visualization.png'
+================================================================================
+
+✅ VALIDASI DATA UNTUK PROCESS MINING
+
+   1. Validasi Kolom Penting...
+      ❌ GAGAL: Kolom penting (Case ID, Activity, Timestamp) tidak lengkap
+
+   2. Check Incomplete Cases...
+      ✅ Tidak ada cases dengan single activity
+
+      Info Start/End Activities:
+      - Unique start activities: 6
+      - Unique end activities: 6
+      ⚠️  Banyak variasi start/end activities, mungkin tidak ada standard process flow
+
+   3. Validasi Activity Sequences...
+      ⚠️  817 events dengan consecutive duplicate activities (3.85%)
+      Contoh: [{'Case ID': 'Case 1', 'Activity': 'take in charge ticket'}, {'Case ID': 'Case 7', 'Activity': 'assign seriousness'}, {'Case ID': 'Case 7', 'Activity': 'assign seriousness'}]
+
+   4. Check Circular Dependencies...
+      ⚠️  1147 cases dengan repeated activities/potential loops (25.04%)
+      Top repeated activities:
+      - Case Case 1499, Activity 'take in charge ticket': 6 occurrences
+      - Case Case 1820, Activity 'take in charge ticket': 6 occurrences
+      - Case Case 1867, Activity 'take in charge ticket': 6 occurrences
+      - Case Case 1114, Activity 'take in charge ticket': 5 occurrences
+      - Case Case 1141, Activity 'take in charge ticket': 5 occurrences
+
+   5. Validasi Minimum Requirements...
+      ✅ Minimum 10 cases: 4580
+      ✅ Minimum 50 events: 21221
+      ✅ Minimum 3 unique activities: 14
+
+      ✅ Semua minimum requirements terpenuhi
+
+   ⚠️  PERHATIAN: Beberapa validasi tidak lolos, review diperlukan
+================================================================================
+
+💾 EXPORT DATA
+
+   1. Menyimpan cleaned data...
+      ✅ Cleaned data disimpan: 'D:/VSCODE/myenv2/share/Mining_Final_Project/finale_preprocessed.csv' (4.91 MB)
+
+   2. Menyimpan statistics...
+      ✅ Statistics disimpan: 'preprocessing_statistics.json'
+
+   3. Membuat backup original data...
+      ✅ Backup original data: 'finale_original_backup.csv' (3.14 MB)
+
+   🎉 Semua data berhasil di-export!
+================================================================================
+
+📋 SUMMARY REPORT
+
+================================================================================
+BEFORE vs AFTER PREPROCESSING
+================================================================================
+
+Jumlah Baris:
+  Before: 21,348
+  After:  21,221
+  Change: -127 (-0.59%)
+
+Jumlah Kolom:
+  Before: 16
+  After:  18
+  Added:  2 new features
+================================================================================
+
+DATA QUALITY METRICS
+================================================================================
+
+✅ Data Cleaning:
+  - Missing values handled: 0
+  - Duplicates removed: 127
+  - Duration outliers detected: 0
+  - Activity count outliers: 310
+
+📊 Process Mining Metrics:
+  - Total unique cases: 4,580
+  - Total events: 21,221
+  - Avg events per case: 4.63
+  - Unique activities: 14
+  - Total variants: 211
+  - Avg case duration: 0.00 hours
+  - Median case duration: 0.00 hours
+
+⚠️  Potential Issues:
+  - Single activity cases: 0
+  - Cases with loops: 1147
+  - Consecutive duplicates: 817
+================================================================================
+
+VALIDATION STATUS
+================================================================================
+
+⚠️ Overall Status: WARNING
+================================================================================
+
+RECOMMENDATIONS
+================================================================================
+
+1. ⚠️  1147 cases memiliki repeated activities (loops). Pastikan ini adalah behavior yang expected dalam proses bisnis.
+================================================================================
+
+NEXT STEPS
+================================================================================
+
+1. Review preprocessing report dan visualisasi yang dihasilkan
+2. Analisis activity frequencies dan case variants
+3. Pertimbangkan untuk filter outliers jika diperlukan
+4. Lanjutkan ke process discovery menggunakan tools seperti:
+   - PM4Py untuk process mining
+   - ProM untuk advanced analysis
+   - Disco untuk visualisasi interaktif
