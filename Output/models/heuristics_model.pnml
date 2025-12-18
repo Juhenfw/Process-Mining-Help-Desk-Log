@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="splace_in_create sw anomaly_create sw anomaly_1">
+        <name>
+          <text>splace_in_create sw anomaly_create sw anomaly_1</text>
+        </name>
+      </place>
+      <place id="pre_invalid">
+        <name>
+          <text>pre_invalid</text>
+        </name>
+      </place>
+      <place id="intplace_take in charge ticket">
+        <name>
+          <text>intplace_take in charge ticket</text>
+        </name>
+      </place>
+      <place id="intplace_verified">
+        <name>
+          <text>intplace_verified</text>
+        </name>
+      </place>
+      <place id="splace_in_require upgrade_take in charge ticket_0">
+        <name>
+          <text>splace_in_require upgrade_take in charge ticket_0</text>
+        </name>
+      </place>
+      <place id="splace_in_require upgrade_require upgrade_2">
+        <name>
+          <text>splace_in_require upgrade_require upgrade_2</text>
+        </name>
+      </place>
+      <place id="intplace_create sw anomaly">
+        <name>
+          <text>intplace_create sw anomaly</text>
+        </name>
+      </place>
+      <place id="splace_in_resolve ticket_assign seriousness_0">
+        <name>
+          <text>splace_in_resolve ticket_assign seriousness_0</text>
+        </name>
+      </place>
+      <place id="pre_create sw anomaly">
+        <name>
+          <text>pre_create sw anomaly</text>
+        </name>
+      </place>
+      <place id="splace_in_create sw anomaly_assign seriousness_0">
+        <name>
+          <text>splace_in_create sw anomaly_assign seriousness_0</text>
+        </name>
+      </place>
+      <place id="intplace_require upgrade">
+        <name>
+          <text>intplace_require upgrade</text>
+        </name>
+      </place>
+      <place id="intplace_resolve sw anomaly">
+        <name>
+          <text>intplace_resolve sw anomaly</text>
+        </name>
+      </place>
+      <place id="pre_wait">
+        <name>
+          <text>pre_wait</text>
+        </name>
+      </place>
+      <place id="splace_in_resolve ticket_3">
+        <name>
+          <text>splace_in_resolve ticket_3</text>
+        </name>
+      </place>
+      <place id="splace_in_require upgrade_create sw anomaly_1">
+        <name>
+          <text>splace_in_require upgrade_create sw anomaly_1</text>
+        </name>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_require upgrade">
+        <name>
+          <text>pre_require upgrade</text>
+        </name>
+      </place>
+      <place id="intplace_wait">
+        <name>
+          <text>intplace_wait</text>
+        </name>
+      </place>
+      <place id="pre_take in charge ticket">
+        <name>
+          <text>pre_take in charge ticket</text>
+        </name>
+      </place>
+      <place id="splace_in_take in charge ticket_0">
+        <name>
+          <text>splace_in_take in charge ticket_0</text>
+        </name>
+      </place>
+      <place id="pre_resolve ticket">
+        <name>
+          <text>pre_resolve ticket</text>
+        </name>
+      </place>
+      <place id="splace_in_require upgrade_assign seriousness_0">
+        <name>
+          <text>splace_in_require upgrade_assign seriousness_0</text>
+        </name>
+      </place>
+      <place id="intplace_assign seriousness">
+        <name>
+          <text>intplace_assign seriousness</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="splace_in_create sw anomaly_take in charge ticket_0">
+        <name>
+          <text>splace_in_create sw anomaly_take in charge ticket_0</text>
+        </name>
+      </place>
+      <place id="pre_resolve sw anomaly">
+        <name>
+          <text>pre_resolve sw anomaly</text>
+        </name>
+      </place>
+      <place id="intplace_resolve ticket">
+        <name>
+          <text>intplace_resolve ticket</text>
+        </name>
+      </place>
+      <place id="pre_assign seriousness">
+        <name>
+          <text>pre_assign seriousness</text>
+        </name>
+      </place>
+      <place id="pre_closed">
+        <name>
+          <text>pre_closed</text>
+        </name>
+      </place>
+      <place id="pre_verified">
+        <name>
+          <text>pre_verified</text>
+        </name>
+      </place>
+      <transition id="hid_6">
+        <name>
+          <text>hid_6</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="545ba941-51a9-4ef1-99fa-64417254ebd8"/>
+      </transition>
+      <transition id="resolved">
+        <name>
+          <text>resolved</text>
+        </name>
+      </transition>
+      <transition id="hid_23">
+        <name>
+          <text>hid_23</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="92d70190-e85f-48bd-a034-f843743d1fce"/>
+      </transition>
+      <transition id="hid_51">
+        <name>
+          <text>hid_51</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="00d95fed-2567-45f6-acc4-2bd26b59ffcc"/>
+      </transition>
+      <transition id="hid_48">
+        <name>
+          <text>hid_48</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c348e168-b1a3-4815-9a0f-e7e342de3adb"/>
+      </transition>
+      <transition id="hid_65">
+        <name>
+          <text>hid_65</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5685cfc7-48f6-4d4f-8c1b-93c81a68f569"/>
+      </transition>
+      <transition id="hid_62">
+        <name>
+          <text>hid_62</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a909bdec-90a3-4bee-a2c1-93d5ea266dc8"/>
+      </transition>
+      <transition id="hid_47">
+        <name>
+          <text>hid_47</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ef8258a9-f1ec-4dbf-bf59-79810124dfec"/>
+      </transition>
+      <transition id="verified">
+        <name>
+          <text>verified</text>
+        </name>
+      </transition>
+      <transition id="assign seriousness">
+        <name>
+          <text>assign seriousness</text>
+        </name>
+      </transition>
+      <transition id="resolve ticket">
+        <name>
+          <text>resolve ticket</text>
+        </name>
+      </transition>
+      <transition id="hid_35">
+        <name>
+          <text>hid_35</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="02b13f67-ea4c-4e74-b1c8-816298394c29"/>
+      </transition>
+      <transition id="hid_53">
+        <name>
+          <text>hid_53</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="75edff50-d245-4033-956c-a3990f5216a5"/>
+      </transition>
+      <transition id="require upgrade">
+        <name>
+          <text>require upgrade</text>
+        </name>
+      </transition>
+      <transition id="hid_50">
+        <name>
+          <text>hid_50</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d122bff3-3589-4dc0-9a85-fd4c1f5e5f3c"/>
+      </transition>
+      <transition id="hid_20">
+        <name>
+          <text>hid_20</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="024a74ce-00c6-47b0-b20a-4b48e62de429"/>
+      </transition>
+      <transition id="hid_38">
+        <name>
+          <text>hid_38</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="955a07fd-3b31-4529-9830-dcb9e43e02ef"/>
+      </transition>
+      <transition id="hid_19">
+        <name>
+          <text>hid_19</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3c2fff53-67ef-4a94-af42-292316408dc4"/>
+      </transition>
+      <transition id="invalid">
+        <name>
+          <text>invalid</text>
+        </name>
+      </transition>
+      <transition id="hid_42">
+        <name>
+          <text>hid_42</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2c620245-5398-4fe5-9451-9ea193192320"/>
+      </transition>
+      <transition id="hid_7">
+        <name>
+          <text>hid_7</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d2883c7f-6742-44d9-a1e8-dad9e1c723a8"/>
+      </transition>
+      <transition id="schedule intervention">
+        <name>
+          <text>schedule intervention</text>
+        </name>
+      </transition>
+      <transition id="hid_34">
+        <name>
+          <text>hid_34</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3de020d9-4e0c-455d-bd67-37eb752afc78"/>
+      </transition>
+      <transition id="hid_41">
+        <name>
+          <text>hid_41</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1a7aea98-b96d-49a7-87fa-668bed378604"/>
+      </transition>
+      <transition id="hid_61">
+        <name>
+          <text>hid_61</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a94aa104-7dc0-4fe3-9e7c-e559bd7e8afa"/>
+      </transition>
+      <transition id="duplicate">
+        <name>
+          <text>duplicate</text>
+        </name>
+      </transition>
+      <transition id="hid_21">
+        <name>
+          <text>hid_21</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="8713a4d6-bebb-436f-befa-8972700c076f"/>
+      </transition>
+      <transition id="hid_60">
+        <name>
+          <text>hid_60</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7a6b3ab2-2402-4177-88bd-caa62c696db2"/>
+      </transition>
+      <transition id="resolve sw anomaly">
+        <name>
+          <text>resolve sw anomaly</text>
+        </name>
+      </transition>
+      <transition id="hid_46">
+        <name>
+          <text>hid_46</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="135801db-64ef-4ebd-9a5b-62bb13cf2e9b"/>
+      </transition>
+      <transition id="wait">
+        <name>
+          <text>wait</text>
+        </name>
+      </transition>
+      <transition id="hid_24">
+        <name>
+          <text>hid_24</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="880d89f7-b46f-4b95-9aa7-8031e407de05"/>
+      </transition>
+      <transition id="hid_63">
+        <name>
+          <text>hid_63</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ae419743-e826-47a7-aa6c-9de3c53f1bf3"/>
+      </transition>
+      <transition id="hid_3">
+        <name>
+          <text>hid_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="4a324d74-f991-4b54-b71a-7ee53906bfab"/>
+      </transition>
+      <transition id="hid_22">
+        <name>
+          <text>hid_22</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2044cbaa-c0a8-411c-b02d-a6a2e7c4891b"/>
+      </transition>
+      <transition id="hid_64">
+        <name>
+          <text>hid_64</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b42d0742-ca11-439f-b9bc-705261e455d4"/>
+      </transition>
+      <transition id="take in charge ticket">
+        <name>
+          <text>take in charge ticket</text>
+        </name>
+      </transition>
+      <transition id="insert ticket">
+        <name>
+          <text>insert ticket</text>
+        </name>
+      </transition>
+      <transition id="hid_25">
+        <name>
+          <text>hid_25</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="8ec5f180-022e-4201-8aa0-8246ad1c86bb"/>
+      </transition>
+      <transition id="hid_28">
+        <name>
+          <text>hid_28</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d5d52d26-5f4f-49ea-b818-79b9c6145901"/>
+      </transition>
+      <transition id="hid_56">
+        <name>
+          <text>hid_56</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3d2601a2-b5bf-4b55-bcf1-92605f021bc2"/>
+      </transition>
+      <transition id="closed">
+        <name>
+          <text>closed</text>
+        </name>
+      </transition>
+      <transition id="hid_4">
+        <name>
+          <text>hid_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2d61f014-a5ad-487f-a82f-17a82ed70d90"/>
+      </transition>
+      <transition id="hid_52">
+        <name>
+          <text>hid_52</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d70a9d66-4091-4c14-ad30-77755f9ecb1e"/>
+      </transition>
+      <transition id="hid_55">
+        <name>
+          <text>hid_55</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="de666b83-7f16-414e-a88e-d46e513b0923"/>
+      </transition>
+      <transition id="hid_68">
+        <name>
+          <text>hid_68</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ae4c2735-d491-40ae-a06a-7307f623b87e"/>
+      </transition>
+      <transition id="create sw anomaly">
+        <name>
+          <text>create sw anomaly</text>
+        </name>
+      </transition>
+      <transition id="hid_37">
+        <name>
+          <text>hid_37</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a8221838-a980-4f27-9afc-ee61484bf5fe"/>
+      </transition>
+      <transition id="hid_59">
+        <name>
+          <text>hid_59</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5b199f82-d0f0-45e0-997d-d5865f37563e"/>
+      </transition>
+      <transition id="hid_10">
+        <name>
+          <text>hid_10</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="77986a12-ce55-4a70-b184-945a1824fe1c"/>
+      </transition>
+      <transition id="hid_14">
+        <name>
+          <text>hid_14</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="319883e2-3baf-4f10-ad09-7bf79e369b7f"/>
+      </transition>
+      <arc id="2298372824064" source="hid_62" target="pre_wait"/>
+      <arc id="2298372825600" source="hid_46" target="pre_wait"/>
+      <arc id="2298368324128" source="hid_4" target="pre_take in charge ticket"/>
+      <arc id="2298372759584" source="pre_verified" target="verified"/>
+      <arc id="2298372761120" source="intplace_assign seriousness" target="hid_34"/>
+      <arc id="2298372767264" source="intplace_wait" target="hid_52"/>
+      <arc id="2298372817440" source="intplace_wait" target="hid_55"/>
+      <arc id="2298372820512" source="hid_63" target="sink0"/>
+      <arc id="2298372825120" source="hid_61" target="pre_verified"/>
+      <arc id="2298372757040" source="hid_28" target="pre_resolve sw anomaly"/>
+      <arc id="2298372761648" source="hid_35" target="splace_in_create sw anomaly_assign seriousness_0"/>
+      <arc id="2298372822576" source="intplace_verified" target="hid_68"/>
+      <arc id="2298368322112" source="splace_in_resolve ticket_assign seriousness_0" target="hid_7"/>
+      <arc id="2298372752960" source="hid_20" target="pre_create sw anomaly"/>
+      <arc id="2298372826176" source="intplace_resolve ticket" target="resolved"/>
+      <arc id="2298372762176" source="intplace_assign seriousness" target="hid_37"/>
+      <arc id="2298372763712" source="take in charge ticket" target="intplace_take in charge ticket"/>
+      <arc id="2298372824640" source="schedule intervention" target="pre_resolve ticket"/>
+      <arc id="2298368325712" source="hid_10" target="pre_resolve ticket"/>
+      <arc id="2298368327248" source="source0" target="hid_14"/>
+      <arc id="2298372762704" source="hid_38" target="splace_in_resolve ticket_assign seriousness_0"/>
+      <arc id="2298372822096" source="closed" target="sink0"/>
+      <arc id="2298372754016" source="splace_in_create sw anomaly_create sw anomaly_1" target="hid_21"/>
+      <arc id="2298372824160" source="duplicate" target="pre_resolve ticket"/>
+      <arc id="2298372818016" source="hid_56" target="splace_in_create sw anomaly_create sw anomaly_1"/>
+      <arc id="2298372819552" source="intplace_require upgrade" target="hid_60"/>
+      <arc id="2298372825696" source="invalid" target="pre_verified"/>
+      <arc id="2298368323696" source="splace_in_take in charge ticket_0" target="hid_4"/>
+      <arc id="2298372753008" source="pre_create sw anomaly" target="create sw anomaly"/>
+      <arc id="2298372756080" source="splace_in_require upgrade_require upgrade_2" target="hid_25"/>
+      <arc id="2298372763760" source="hid_41" target="splace_in_create sw anomaly_take in charge ticket_0"/>
+      <arc id="2298372753536" source="splace_in_create sw anomaly_assign seriousness_0" target="hid_20"/>
+      <arc id="2298372825216" source="hid_64" target="pre_resolve ticket"/>
+      <arc id="2298372765824" source="resolve ticket" target="intplace_resolve ticket"/>
+      <arc id="2298372817536" source="hid_55" target="sink0"/>
+      <arc id="2298372819072" source="require upgrade" target="intplace_require upgrade"/>
+      <arc id="2298372755600" source="splace_in_require upgrade_create sw anomaly_1" target="hid_24"/>
+      <arc id="2298372761744" source="hid_35" target="splace_in_require upgrade_assign seriousness_0"/>
+      <arc id="2298372822672" source="hid_68" target="sink0"/>
+      <arc id="2298372754592" source="pre_require upgrade" target="require upgrade"/>
+      <arc id="2298372766880" source="wait" target="intplace_wait"/>
+      <arc id="2298372820128" source="intplace_require upgrade" target="hid_62"/>
+      <arc id="2298372826272" source="intplace_verified" target="duplicate"/>
+      <arc id="2298368324272" source="hid_3" target="pre_assign seriousness"/>
+      <arc id="2298368322736" source="hid_7" target="pre_resolve ticket"/>
+      <arc id="2298368321200" source="pre_wait" target="wait"/>
+      <arc id="2298372755120" source="splace_in_require upgrade_assign seriousness_0" target="hid_23"/>
+      <arc id="2298372762800" source="hid_38" target="splace_in_take in charge ticket_0"/>
+      <arc id="2298372824256" source="hid_52" target="pre_resolve ticket"/>
+      <arc id="2298372819648" source="hid_60" target="splace_in_resolve ticket_3"/>
+      <arc id="2298372825792" source="insert ticket" target="pre_assign seriousness"/>
+      <arc id="2298372762320" source="hid_37" target="splace_in_resolve ticket_assign seriousness_0"/>
+      <arc id="2298372765392" source="intplace_take in charge ticket" target="hid_47"/>
+      <arc id="2298372825312" source="hid_64" target="pre_require upgrade"/>
+      <arc id="2298372819168" source="intplace_require upgrade" target="hid_59"/>
+      <arc id="2298372820704" source="resolved" target="pre_invalid"/>
+      <arc id="2298372822240" source="verified" target="intplace_verified"/>
+      <arc id="2298372823776" source="hid_51" target="pre_require upgrade"/>
+      <arc id="2298372754160" source="source0" target="hid_22"/>
+      <arc id="2298372766448" source="intplace_resolve ticket" target="hid_50"/>
+      <arc id="2298372754688" source="hid_23" target="pre_require upgrade"/>
+      <arc id="2298372766976" source="intplace_wait" target="hid_51"/>
+      <arc id="2298372826368" source="intplace_take in charge ticket" target="hid_28"/>
+      <arc id="2298368324368" source="source0" target="hid_3"/>
+      <arc id="2298368325904" source="splace_in_resolve ticket_3" target="hid_10"/>
+      <arc id="2298372753680" source="hid_21" target="pre_create sw anomaly"/>
+      <arc id="2298372761360" source="hid_34" target="splace_in_take in charge ticket_0"/>
+      <arc id="2298372823824" source="hid_53" target="pre_take in charge ticket"/>
+      <arc id="2298372752672" source="source0" target="hid_19"/>
+      <arc id="2298372755744" source="hid_25" target="pre_require upgrade"/>
+      <arc id="2298372824352" source="hid_37" target="pre_wait"/>
+      <arc id="2298372818208" source="hid_56" target="splace_in_require upgrade_create sw anomaly_1"/>
+      <arc id="2298372825888" source="intplace_take in charge ticket" target="schedule intervention"/>
+      <arc id="2298368322352" source="pre_resolve ticket" target="resolve ticket"/>
+      <arc id="2298372763952" source="intplace_take in charge ticket" target="hid_42"/>
+      <arc id="2298372765488" source="hid_47" target="sink0"/>
+      <arc id="2298368322880" source="hid_6" target="pre_take in charge ticket"/>
+      <arc id="2298372755264" source="hid_24" target="pre_require upgrade"/>
+      <arc id="2298372825408" source="hid_34" target="pre_assign seriousness"/>
+      <arc id="2298372817728" source="intplace_create sw anomaly" target="hid_56"/>
+      <arc id="2298372820800" source="intplace_resolve sw anomaly" target="hid_64"/>
+      <arc id="2298372757328" source="pre_resolve sw anomaly" target="resolve sw anomaly"/>
+      <arc id="2298372754256" source="hid_22" target="pre_create sw anomaly"/>
+      <arc id="2298372766544" source="hid_50" target="sink0"/>
+      <arc id="2298372821328" source="intplace_resolve sw anomaly" target="hid_65"/>
+      <arc id="2298368323936" source="pre_take in charge ticket" target="take in charge ticket"/>
+      <arc id="2298372824928" source="hid_52" target="pre_wait"/>
+      <arc id="2298368321392" source="hid_14" target="pre_resolve ticket"/>
+      <arc id="2298372817776" source="create sw anomaly" target="intplace_create sw anomaly"/>
+      <arc id="2298372819312" source="hid_59" target="splace_in_resolve ticket_3"/>
+      <arc id="2298372825984" source="intplace_create sw anomaly" target="hid_28"/>
+      <arc id="2298372752768" source="hid_19" target="pre_wait"/>
+      <arc id="2298372824448" source="hid_56" target="pre_resolve ticket"/>
+      <arc id="2298372763520" source="intplace_take in charge ticket" target="hid_41"/>
+      <arc id="2298372819840" source="intplace_require upgrade" target="hid_61"/>
+      <arc id="2298368322448" source="pre_assign seriousness" target="assign seriousness"/>
+      <arc id="2298372760976" source="source0" target="insert ticket"/>
+      <arc id="2298372764048" source="hid_42" target="splace_in_require upgrade_take in charge ticket_0"/>
+      <arc id="2298368322976" source="source0" target="hid_6"/>
+      <arc id="2298372753824" source="splace_in_create sw anomaly_take in charge ticket_0" target="hid_21"/>
+      <arc id="2298372758432" source="pre_closed" target="closed"/>
+      <arc id="2298372761504" source="intplace_assign seriousness" target="hid_35"/>
+      <arc id="2298372825504" source="hid_65" target="pre_resolve sw anomaly"/>
+      <arc id="2298372767648" source="intplace_wait" target="hid_53"/>
+      <arc id="2298372755888" source="splace_in_require upgrade_take in charge ticket_0" target="hid_25"/>
+      <arc id="2298372765104" source="intplace_take in charge ticket" target="hid_46"/>
+      <arc id="2298372753344" source="splace_in_create sw anomaly_take in charge ticket_0" target="hid_20"/>
+      <arc id="2298372761024" source="assign seriousness" target="intplace_assign seriousness"/>
+      <arc id="2298372762560" source="intplace_assign seriousness" target="hid_38"/>
+      <arc id="2298372765632" source="intplace_resolve ticket" target="hid_48"/>
+      <arc id="2298372820416" source="intplace_require upgrade" target="hid_63"/>
+      <arc id="2298372825024" source="invalid" target="pre_closed"/>
+      <arc id="2298372755408" source="splace_in_require upgrade_take in charge ticket_0" target="hid_24"/>
+      <arc id="2298372819408" source="hid_59" target="splace_in_require upgrade_require upgrade_2"/>
+      <arc id="2298372820944" source="resolve sw anomaly" target="intplace_resolve sw anomaly"/>
+      <arc id="2298372760544" source="pre_invalid" target="invalid"/>
+      <arc id="2298372826080" source="intplace_take in charge ticket" target="hid_7"/>
+      <arc id="2298372824544" source="hid_48" target="pre_closed"/>
+      <arc id="2298372754928" source="splace_in_require upgrade_take in charge ticket_0" target="hid_23"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink0">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="alpha_classic_net_1765700612.1409125" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>alpha_classic_net_1765700612.1409125</text>
+    </name>
+    <page id="n0">
+      <place id="({'resolved'}, {'invalid'})">
+        <name>
+          <text>({'resolved'}, {'invalid'})</text>
+        </name>
+      </place>
+      <place id="start">
+        <name>
+          <text>start</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="({'verified'}, {'duplicate'})">
+        <name>
+          <text>({'verified'}, {'duplicate'})</text>
+        </name>
+      </place>
+      <place id="end">
+        <name>
+          <text>end</text>
+        </name>
+      </place>
+      <place id="({'invalid'}, {'verified'})">
+        <name>
+          <text>({'invalid'}, {'verified'})</text>
+        </name>
+      </place>
+      <transition id="duplicate">
+        <name>
+          <text>duplicate</text>
+        </name>
+      </transition>
+      <transition id="resolve ticket">
+        <name>
+          <text>resolve ticket</text>
+        </name>
+      </transition>
+      <transition id="insert ticket">
+        <name>
+          <text>insert ticket</text>
+        </name>
+      </transition>
+      <transition id="closed">
+        <name>
+          <text>closed</text>
+        </name>
+      </transition>
+      <transition id="verified">
+        <name>
+          <text>verified</text>
+        </name>
+      </transition>
+      <transition id="resolve sw anomaly">
+        <name>
+          <text>resolve sw anomaly</text>
+        </name>
+      </transition>
+      <transition id="wait">
+        <name>
+          <text>wait</text>
+        </name>
+      </transition>
+      <transition id="create sw anomaly">
+        <name>
+          <text>create sw anomaly</text>
+        </name>
+      </transition>
+      <transition id="assign seriousness">
+        <name>
+          <text>assign seriousness</text>
+        </name>
+      </transition>
+      <transition id="schedule intervention">
+        <name>
+          <text>schedule intervention</text>
+        </name>
+      </transition>
+      <transition id="invalid">
+        <name>
+          <text>invalid</text>
+        </name>
+      </transition>
+      <transition id="take in charge ticket">
+        <name>
+          <text>take in charge ticket</text>
+        </name>
+      </transition>
+      <transition id="resolved">
+        <name>
+          <text>resolved</text>
+        </name>
+      </transition>
+      <transition id="require upgrade">
+        <name>
+          <text>require upgrade</text>
+        </name>
+      </transition>
+      <arc id="2298372760160" source="wait" target="end"/>
+      <arc id="2298372759968" source="resolve ticket" target="end"/>
+      <arc id="2298372760064" source="closed" target="end"/>
+      <arc id="2298372760256" source="take in charge ticket" target="end"/>
+      <arc id="2298372759776" source="verified" target="end"/>
+      <arc id="2298372759200" source="require upgrade" target="end"/>
+      <arc id="2298372759872" source="resolved" target="({'resolved'}, {'invalid'})"/>
+      <arc id="2298372759392" source="({'resolved'}, {'invalid'})" target="invalid"/>
+      <arc id="2298372763088" source="start" target="insert ticket"/>
+      <arc id="2298372761936" source="start" target="assign seriousness"/>
+      <arc id="2298372761840" source="start" target="wait"/>
+      <arc id="2298372762992" source="start" target="resolve ticket"/>
+      <arc id="2298372762032" source="start" target="create sw anomaly"/>
+      <arc id="2298372760784" source="start" target="take in charge ticket"/>
+      <arc id="2298372765968" source="invalid" target="({'invalid'}, {'verified'})"/>
+      <arc id="2298372758768" source="({'invalid'}, {'verified'})" target="verified"/>
+      <arc id="2298372759056" source="verified" target="({'verified'}, {'duplicate'})"/>
+      <arc id="2298372758576" source="({'verified'}, {'duplicate'})" target="duplicate"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="end">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

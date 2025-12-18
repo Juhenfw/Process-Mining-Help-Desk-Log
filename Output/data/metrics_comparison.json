@@ -1,0 +1,32 @@
+{
+    "inductive": {
+        "alignment_fitness": 0.20160171761889378,
+        "alignment_cost": 18.349563318777292,
+        "token_replay_fitness": 0.0,
+        "fitness": 1.0,
+        "precision": 0.5136428201023606,
+        "generalization": 0.8168509802794905,
+        "simplicity": 0.6307692307692307,
+        "f1_score": 0.6786843147944577
+    },
+    "heuristics": {
+        "alignment_fitness": -542.0277136781141,
+        "alignment_cost": 5240.810262008734,
+        "token_replay_fitness": 0.0,
+        "fitness": 0.9162231067089275,
+        "precision": 0.8333312231746072,
+        "generalization": 0.6113940849767547,
+        "simplicity": 0.5159235668789809,
+        "f1_score": 0.8728135036142781
+    },
+    "alpha": {
+        "alignment_fitness": -5714.026150874051,
+        "alignment_cost": 26482.5327510917,
+        "token_replay_fitness": 0.0,
+        "fitness": 0.5471529722703042,
+        "precision": 0.43459938629389705,
+        "generalization": 0.7066428729835725,
+        "simplicity": 1.0,
+        "f1_score": 0.48442429271129794
+    }
+}
