@@ -1,7 +1,7 @@
 # Process-Mining-Help-Desk-Log
 [Final Project Process Mining Course]
 
-Compare model performance -> Alpha MIner, Heuristic Miner, Inductive Miner
+Compare model performance -> Alpha Miner, Heuristic Miner, Inductive Miner
 
 Bottleneck Analysis -> DFG Frequency and Performance
 
