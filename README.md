@@ -1,5 +1,5 @@
 # Process-Mining-Help-Desk-Log
-Final Project Process Mining Course
+[Final Project Process Mining Course]
 
 Compare model performance -> Alpha MIner, Heuristic Miner, Inductive Miner
 
